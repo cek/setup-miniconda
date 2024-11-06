@@ -72,7 +72,7 @@ export async function runInstaller(
           For the above reasons, this is treated a monolithic arg
         */
       command = [
-        `"${installerPath}" /InstallationType=JustMe /RegisterPython=0 /S /D=${outputPath}`,
+        `"${installerPath}" /InstallationType=JustMe /RegisterPython=0 /D=${outputPath}`,
       ];
       break;
     case ".sh":
